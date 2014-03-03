@@ -1,0 +1,48 @@
+@font-face{font-family:'bariol';src:url("../fonts/bariol_bold-webfont.eot");src:url("../fonts/bariol_bold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/bariol_bold-webfont.woff") format('woff'),url("../fonts/bariol_bold-webfont.ttf") format('truetype'),url("../fonts/bariol_bold-webfont.svg#bariol_boldbold") format('svg');font-weight:bold;font-style:normal}
+@font-face{font-family:'bariol';src:url("../fonts/bariol_bold_italic-webfont.eot");src:url("../fonts/bariol_bold_italic-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/bariol_bold_italic-webfont.woff") format('woff'),url("../fonts/bariol_bold_italic-webfont.ttf") format('truetype'),url("../fonts/bariol_bold_italic-webfont.svg#bariol_boldbold_italic") format('svg');font-weight:bold;font-style:italic}
+@font-face{font-family:'bariol';src:url("../fonts/bariol_regular-webfont.eot");src:url("../fonts/bariol_regular-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/bariol_regular-webfont.woff") format('woff'),url("../fonts/bariol_regular-webfont.ttf") format('truetype'),url("../fonts/bariol_regular-webfont.svg#bariol_regularregular") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'bariol';src:url("../fonts/bariol_regular_italic-webfont.eot");src:url("../fonts/bariol_regular_italic-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/bariol_regular_italic-webfont.woff") format('woff'),url("../fonts/bariol_regular_italic-webfont.ttf") format('truetype'),url("../fonts/bariol_regular_italic-webfont.svg#bariolregular_italic") format('svg');font-weight:normal;font-style:italic}
+@font-face{font-family:'bariol_lightlight';src:url("../fonts/bariol_light-webfont.eot");src:url("../fonts/bariol_light-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/bariol_light-webfont.woff") format('woff'),url("../fonts/bariol_light-webfont.ttf") format('truetype'),url("../fonts/bariol_light-webfont.svg#bariol_lightlight") format('svg');font-weight:lighter;font-style:normal}
+@font-face{font-family:'bariol';src:url("../fonts/bariol_light_italic-webfont.eot");src:url("../fonts/bariol_light_italic-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/bariol_light_italic-webfont.woff") format('woff'),url("../fonts/bariol_light_italic-webfont.ttf") format('truetype'),url("../fonts/bariol_light_italic-webfont.svg#bariollight_italic") format('svg');font-weight:lighter;font-style:italic}
+@font-face{font-family:'bariolthin';src:url("../fonts/bariol_thin-webfont.eot");src:url("../fonts/bariol_thin-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/bariol_thin-webfont.woff") format('woff'),url("../fonts/bariol_thin-webfont.ttf") format('truetype'),url("../fonts/bariol_thin-webfont.svg#bariolthin") format('svg');font-weight:100;font-style:normal}
+@font-face{font-family:'bariol';src:url("../fonts/bariol_thin_italic-webfont.eot");src:url("../fonts/bariol_thin_italic-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/bariol_thin_italic-webfont.woff") format('woff'),url("../fonts/bariol_thin_italic-webfont.ttf") format('truetype'),url("../fonts/bariol_thin_italic-webfont.svg#bariolthin_italic") format('svg');font-weight:100;font-style:italic}
+[class^="icon-"],[class*=" icon-"]{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;}
+@font-face{font-family:'icomoon';src:url("../fonts/icomoon.eot?6ksvmk");src:url("../fonts/icomoon.eot?#iefix6ksvmk") format('embedded-opentype'),url("../fonts/icomoon.woff?6ksvmk") format('woff'),url("../fonts/icomoon.ttf?6ksvmk") format('truetype'),url("../fonts/icomoon.svg?6ksvmk#icomoon") format('svg');font-weight:normal;font-style:normal}
+.icon-twitter:before{content:"\e600"}
+.icon-facebook:before{content:"\e601"}
+.icon-github:before{content:"\e602"}
+.icon-graduation:before{content:"\e603"}
+.icon-judoka-face:before{content:"\e604"}
+.icon-facebook2:before{content:"\e606"}
+.icon-cart:before{content:"\e605"}
+.icon-heart:before{content:"\e608"}
+.icon-play:before{content:"\e609"}
+.icon-question:before{content:"\e60a"}
+.icon-group:before{content:"\e60b"}
+.icon-book:before{content:"\e60c"}
+.icon-envelope-alt:before{content:"\e60d"}
+.icon-chat:before{content:"\e60e"}
+.icon-box:before{content:"\e60f"}
+.icon-pencil:before{content:"\e610"}
+.icon-tumblr:before{content:"\e611"}
+.icon-fire:before{content:"\e61e"}
+.icon-code:before{content:"\e612"}
+.icon-suitcase:before{content:"\e613"}
+.icon-stats:before{content:"\e614"}
+.icon-pen:before{content:"\e615"}
+.icon-plus:before{content:"\e607"}
+.icon-github2:before{content:"\e618"}
+.icon-linkedin:before{content:"\e619"}
+.icon-google-plus:before{content:"\e61a"}
+.icon-dribbble:before{content:"\e61b"}
+.icon-flickr:before{content:"\e61c"}
+.icon-instagram:before{content:"\e61d"}
+.icon-download:before{content:"\e61f"}
+.icon-upload:before{content:"\e620"}
+.icon-book2:before{content:"\e621"}
+.icon-windows8:before{content:"\e624"}
+.icon-apple:before{content:"\e625"}
+.icon-kickstarter:before{content:"\e617"}
+.icon-pong:before{content:"\e616"}
+.icon-burner:before{content:"\e622"}
+.icon-os:before{content:"\e623"}

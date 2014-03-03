@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"node_modules",
+				"public",
+				".tmp"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}

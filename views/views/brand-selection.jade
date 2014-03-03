@@ -1,0 +1,11 @@
+section: .page-width
+
+    h2.center Search your SD card Brand
+
+    div.center
+        input.large(type='text', ng-model='brandSearch', placeholder='Search')
+    br
+
+    ul.brands-list
+        li(ng-repeat='brand in filtered'): a(ng-href='#/selection/{{ brand }}')
+            img(ng-src='logos/{{ brand | lowercase }}.png')

@@ -1,0 +1,9 @@
+
+<section>
+  <div class="page-width"><a ng-href="#/selection/{{ brand }}" class="button button-secondary button-back">&laquo; Types</a>
+    <h2 class="center">Select a size</h2>
+    <ul class="sizes-list">
+      <li ng-repeat="size in sizes"><a ng-href="#/selection/{{ brand }}/{{ type }}/{{ size }}">{{ size }} GB.</a></li>
+    </ul>
+  </div>
+</section>

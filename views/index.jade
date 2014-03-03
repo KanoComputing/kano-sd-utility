@@ -1,0 +1,22 @@
+doctype html
+html(lang='en', ng-app='sd-checker-app')
+    head
+
+        block styles
+            link(href='css/kano-main.css', rel='stylesheet', type='text/css')
+            link(href='css/kano-fonts.css', rel='stylesheet', type='text/css')
+            link(href='css/app.css', rel='stylesheet', type='text/css')
+
+        block head
+
+        title Kano - SD Card compatibility check
+
+    body
+        header: .inner
+            .logo
+
+        div(ng-view)
+
+        script(src='js/vendor/angular.min.js', type='text/javascript')
+        script(src='js/vendor/angular-route.min.js', type='text/javascript')
+        script(src='js/index.js', type='text/javascript')

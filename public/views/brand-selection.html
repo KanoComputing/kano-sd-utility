@@ -1,0 +1,12 @@
+
+<section>
+  <div class="page-width">
+    <h2 class="center">Search your SD card Brand</h2>
+    <div class="center">
+      <input type="text" ng-model="brandSearch" placeholder="Search" class="large"/>
+    </div><br/>
+    <ul class="brands-list">
+      <li ng-repeat="brand in filtered"><a ng-href="#/selection/{{ brand }}"><img ng-src="logos/{{ brand | lowercase }}.png"/></a></li>
+    </ul>
+  </div>
+</section>

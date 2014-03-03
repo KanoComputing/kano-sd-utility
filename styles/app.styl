@@ -1,0 +1,121 @@
+color-orange = #fda34b
+color-red = #d43c3c
+color-green = #abd43c
+
+debullet()
+    list-style none
+    text-align center
+    padding 0
+
+    li
+        margin 0
+
+large-box()
+    display inline-block
+    margin 0 10px
+    border 1px solid #ddd
+    padding 40px
+    font-size 30px
+    border-radius 5px
+    box-shadow 0 2px 0 0 rgba(#000, .04)
+
+ul.brands-list
+    debullet()
+
+    li
+        display inline-block
+        width 13%
+        margin 0 1.5%
+
+        a
+            display inline-block
+            border-radius 3px
+
+            img
+                display block
+                width 100%
+
+            &:hover
+                background color-orange
+
+                img
+                    opacity .5
+
+ul.types-list, ul.sizes-list
+    debullet()
+
+    li
+        display inline-block
+        width 30%
+        margin-bottom 20px
+
+        a
+            large-box()
+            display block
+            color #333
+            transition background, border-color .2s
+
+            &:hover
+                background rgba(color-orange, .2)
+                border-color color-orange
+
+h2.center
+    margin-top 10px
+    margin-bottom 30px
+    clear both
+
+.page-width
+    position relative
+
+a.button.button-back
+    position absolute
+    left 20px
+    top 10px
+
+ul.sizes-list li
+    width 20%
+
+.results-heading
+    border-bottom 1px solid #eee
+
+ul.results-list
+    debullet()
+
+    li
+        margin-bottom 20px
+
+    .type, .size, .info, .compatible
+
+        .inner
+            padding 10px
+            border-radius 5px
+
+    .info .inner
+        background #eee
+        font-style italic
+
+    .compatible .inner
+        background color-red
+        color #fff
+        display block
+        padding 10px
+
+        &.success
+            background color-green
+
+@media screen and (max-width: 600px)
+
+    body
+        padding-top 60px
+        text-align center
+        float none
+
+    header .logo
+        margin 10px auto
+        float none
+
+    a.button.button-back
+        position static
+
+    ul.brands-list li
+        width 70%

@@ -1,0 +1,8 @@
+section: .page-width
+
+    a.button.button-secondary.button-back(ng-href='#/selection/{{ brand }}') &laquo; Types
+
+    h2.center Select a size
+
+    ul.sizes-list
+        li(ng-repeat='size in sizes'): a(ng-href='#/selection/{{ brand }}/{{ type }}/{{ size }}') {{ size }} GB.

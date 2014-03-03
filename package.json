@@ -1,0 +1,32 @@
+{
+  "name": "kano-race",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "http-server public -p 2000",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "author": "Tancredi Trugenberger",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "stylus": "~0.42.x",
+    "watchify": "~0.5.x",
+    "jade": "~1.1.x",
+    "coffee-script": "~1.7.x",
+    "gulp": "~3.5.x",
+    "gulp-jade": "~0.4.x",
+    "gulp-browserify": "~0.4.x",
+    "gulp-stylus": "0.0.x",
+    "tiny-lr": "0.0.x",
+    "gulp-livereload": "~1.2.x",
+    "cli-color": "~0.2.x",
+    "coffeeify": "~0.6.0",
+    "http-server": "~0.6.1"
+  },
+  "dependencies": {
+    "gulp-rename": "~1.1.0"
+  }
+}

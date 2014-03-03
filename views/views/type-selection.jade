@@ -1,0 +1,8 @@
+section: .page-width
+
+    a.button.button-secondary.button-back(ng-href='#/selection') &laquo; Brands
+
+    h2.center What type of SD card is it?
+
+    ul.types-list
+        li(ng-repeat='type in types'): a(ng-href='#/selection/{{ brand }}/{{ type }}') {{ type }}
