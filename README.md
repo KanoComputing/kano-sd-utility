@@ -1,4 +1,4 @@
->This web-app wraps in a guided wisards the contents taken from the Raspbian / SD Cards compatibility table found on [elinux.org](http://elinux.org/RPi_SD_cards)
+>This web-app wraps in a guided wizard the contents taken from the Raspbian / SD Cards compatibility table found on [elinux.org](http://elinux.org/RPi_SD_cards)
 
 ## Setup
 
