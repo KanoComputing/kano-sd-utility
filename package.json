@@ -25,12 +25,8 @@
     "gulp-livereload": "~1.2.x",
     "cli-color": "~0.2.x",
     "coffeeify": "~0.6.0",
-    "http-server": "~0.6.1",
-    "gulp-rename": "~1.1.0",
-    "gulp-clean": "~0.2.4",
-    "gulp-zip": "~0.1.2"
-  },
-  "dependencies": {
-    "gulp-zip": "~0.1.2"
+    "http-server": "~0.6.x",
+    "gulp-rename": "~1.1.x",
+    "gulp-clean": "~0.2.x"
   }
 }

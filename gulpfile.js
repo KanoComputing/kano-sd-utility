@@ -6,7 +6,6 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     rename = require('gulp-rename'),
     clean = require('gulp-clean'),
-    zip = require('gulp-zip'),
     color = require('cli-color');
 
 var server = lr(),
@@ -14,7 +13,7 @@ var server = lr(),
     production = env === 'production';
 
 var paths = {
-    bundle: { src: 'app/**/*', dir: 'dist', out: 'app.zip' },
+    bundle: { src: 'app', out: 'app.zip' },
     views: { watch: [ 'views/**/*.jade', 'content/**/*' ], src: 'views/**/*.jade', out: 'app' },
     browserify: { watch: 'src/**/*.coffee' , src: 'src/index.coffee', out: 'app/js' },
     styles: { watch: 'styles/**/*.styl', src: 'styles/app.styl', out: 'app/css' },
@@ -80,12 +79,6 @@ gulp.task('clean', function () {
     gulp.src(paths.clean.targets).pipe(clean());
 });
 
-gulp.task('zip', function () {
-    gulp.src(paths.bundle.src)
-    .pipe(zip(paths.bundle.out))
-    .pipe(gulp.dest(paths.bundle.dir));
-});
-
 gulp.task('build', [ 'clean', 'browserify', 'styles', 'views' ]);
 
 gulp.task('watch', [ 'listen' ], function () {
@@ -93,7 +86,5 @@ gulp.task('watch', [ 'listen' ], function () {
     gulp.watch(paths.styles.watch, [ 'styles' ]);
     gulp.watch(paths.views.watch, [ 'views' ]);
 });
-
-gulp.task('bundle', [ 'build', 'zip' ]);
 
 gulp.task('default', [ 'build', 'watch' ]);
