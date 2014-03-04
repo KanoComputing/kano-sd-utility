@@ -1,4 +1,9 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+
+/*
+Copyright (C) 2014 Kano Computing Ltd.
+License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+ */
 var app;
 
 app = angular.module('sd-checker-app', ['ngRoute']);
@@ -14,6 +19,11 @@ module.exports = app;
 
 
 },{}],2:[function(require,module,exports){
+
+/*
+Copyright (C) 2014 Kano Computing Ltd.
+License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+ */
 module.exports = function($scope, $rootScope) {
   $scope.filtered = [];
   $rootScope.$watch('cards', function() {
@@ -49,6 +59,11 @@ module.exports = function($scope, $rootScope) {
 
 
 },{}],3:[function(require,module,exports){
+
+/*
+Copyright (C) 2014 Kano Computing Ltd.
+License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+ */
 module.exports = function($scope, $rootScope, $routeParams) {
   $scope.brand = $routeParams.brand;
   $scope.type = $routeParams.type;
@@ -75,6 +90,11 @@ module.exports = function($scope, $rootScope, $routeParams) {
 
 
 },{}],4:[function(require,module,exports){
+
+/*
+Copyright (C) 2014 Kano Computing Ltd.
+License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+ */
 module.exports = function($scope, $rootScope, $routeParams) {
   $scope.brand = $routeParams.brand;
   $scope.type = $routeParams.type;
@@ -102,6 +122,11 @@ module.exports = function($scope, $rootScope, $routeParams) {
 
 
 },{}],5:[function(require,module,exports){
+
+/*
+Copyright (C) 2014 Kano Computing Ltd.
+License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+ */
 module.exports = function($scope, $rootScope, $routeParams) {
   $scope.brand = $routeParams.brand;
   $scope.filtered = [];
@@ -128,12 +153,22 @@ module.exports = function($scope, $rootScope, $routeParams) {
 
 
 },{}],6:[function(require,module,exports){
+
+/*
+Copyright (C) 2014 Kano Computing Ltd.
+License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+ */
 require('./app');
 
 require('./routes');
 
 
 },{"./app":1,"./routes":7}],7:[function(require,module,exports){
+
+/*
+Copyright (C) 2014 Kano Computing Ltd.
+License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+ */
 var app, controllers;
 
 app = require('./app');
