@@ -15,5 +15,11 @@ section: .page-width
         li.row(ng-repeat='card in results')
             .col-2.class: .inner {{ card.class || '-' }}
             .col-2.model: .inner {{ card.model || '-' }}
-            .col-6.info: .inner {{ card.info || '' }}
+            .col-6.info: .inner {{ card.info || '-' }}
             .col-2.compatible: .inner(ng-class='{ success: card.compatible }') {{ card.compatible ? 'yes': 'no' }}
+
+    p.center.credits.authors
+        | Reports by: 
+        span(ng-repeat='author in authors')
+            {{author}}
+            span(ng-if='!$last') , 

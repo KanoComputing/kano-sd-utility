@@ -55,16 +55,21 @@ module.exports = function($scope, $rootScope, $routeParams) {
   $scope.size = $routeParams.size;
   $scope.results = [];
   return $rootScope.$watch('cards', function() {
-    var card, results, _i, _len, _ref;
+    var authors, card, results, _i, _len, _ref;
     results = [];
+    authors = [];
     _ref = $rootScope.cards;
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       card = _ref[_i];
       if (card.brand === $scope.brand && card.type === $scope.type && card.size === $scope.size) {
         results.push(card);
+        if (authors.indexOf(card.author) === -1) {
+          authors.push(card.author);
+        }
       }
     }
-    return $scope.results = results;
+    $scope.results = results;
+    return $scope.authors = authors;
   });
 };
 
