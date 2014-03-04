@@ -1,4 +1,11 @@
 {
     "name": "kano-sd-utility",
-    "main": "index.html"
+    "main": "index.html",
+    "window": {
+        "toolbar": false,
+        "width": 1000,
+        "height": 600,
+        "icon": "icon.png",
+        "title": "Kano SD card utility"
+    }
 }

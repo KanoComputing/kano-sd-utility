@@ -6,13 +6,14 @@ html(lang='en', ng-app='sd-checker-app')
             link(href='css/kano-main.css', rel='stylesheet', type='text/css')
             link(href='css/kano-fonts.css', rel='stylesheet', type='text/css')
             link(href='css/app.css', rel='stylesheet', type='text/css')
+            link(href='favicon.ico', rel='shortcut icon', type='text/css')
 
         block head
 
         title Kano - SD Card compatibility check
 
     body
-        header: .inner
+        header.reduced: .inner
             .logo
 
         div(ng-view)
