@@ -1,7 +1,9 @@
 node_modules
 **DS_Store
-public/css/app.css
-public/*/**.html
-public/js/app.js
+app/css/app.css
+app/*/**.html
+app/js/app.js
 **.sublime-workspace
 .tmp
+app.zip
+dist

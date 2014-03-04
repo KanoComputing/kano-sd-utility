@@ -5,6 +5,8 @@ var gulp = require('gulp'),
     lr = require('tiny-lr'),
     livereload = require('gulp-livereload'),
     rename = require('gulp-rename'),
+    clean = require('gulp-clean'),
+    zip = require('gulp-zip'),
     color = require('cli-color');
 
 var server = lr(),
@@ -12,9 +14,11 @@ var server = lr(),
     production = env === 'production';
 
 var paths = {
-    views: { watch: [ 'views/**/*.jade', 'content/**/*' ], src: 'views/**/*.jade', out: 'public' },
-    browserify: { watch: 'src/**/*.coffee' , src: 'src/index.coffee', out: 'public/js' },
-    styles: { watch: 'styles/**/*.styl', src: 'styles/app.styl', out: 'public/css' }
+    bundle: { src: 'app/**/*', dir: 'dist', out: 'app.zip' },
+    views: { watch: [ 'views/**/*.jade', 'content/**/*' ], src: 'views/**/*.jade', out: 'app' },
+    browserify: { watch: 'src/**/*.coffee' , src: 'src/index.coffee', out: 'app/js' },
+    styles: { watch: 'styles/**/*.styl', src: 'styles/app.styl', out: 'app/css' },
+    clean: { targets: 'app/**/*.html' }
 };
 
 function beep () {
@@ -72,10 +76,24 @@ gulp.task('listen', function (next) {
     server.listen(35729, next);
 });
 
+gulp.task('clean', function () {
+    gulp.src(paths.clean.targets).pipe(clean());
+});
+
+gulp.task('zip', function () {
+    gulp.src(paths.bundle.src)
+    .pipe(zip(paths.bundle.out))
+    .pipe(gulp.dest(paths.bundle.dir));
+});
+
+gulp.task('build', [ 'clean', 'browserify', 'styles', 'views' ]);
+
 gulp.task('watch', [ 'listen' ], function () {
     gulp.watch(paths.browserify.watch, [ 'browserify' ]);
     gulp.watch(paths.styles.watch, [ 'styles' ]);
     gulp.watch(paths.views.watch, [ 'views' ]);
 });
 
-gulp.task('default', [ 'browserify', 'styles', 'views' ]);
+gulp.task('bundle', [ 'build', 'zip' ]);
+
+gulp.task('default', [ 'build', 'watch' ]);

@@ -13,7 +13,7 @@ section: .page-width
 
     ul.results-list
         li.row(ng-repeat='card in results')
-            .col-2.type: .inner: {{ card.class || '-' }}
-            .col-2.size: .inner: {{ card.model || 'Unspecified' }}
-            .col-5.info: .inner: {{ card.info || 'No information available' }}
-            .col-2.compatible: .inner(ng-class='{ success: card.compatible }'): {{ card.compatible }}
+            .col-2.type: .inner {{ card.class || '-' }}
+            .col-2.size: .inner {{ card.model || 'Unspecified' }}
+            .col-5.info: .inner {{ card.info || 'No information available' }}
+            .col-2.compatible: .inner(ng-class='{ success: card.compatible }') {{ card.compatible }}

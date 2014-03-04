@@ -4,10 +4,11 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "http-server public -p 2000",
+    "start": "http-server app -p 2000",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp",
-    "watch": "gulp watch"
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "bundle": "gulp bundle"
   },
   "author": "Tancredi Trugenberger",
   "license": "BSD-2-Clause",
@@ -24,9 +25,12 @@
     "gulp-livereload": "~1.2.x",
     "cli-color": "~0.2.x",
     "coffeeify": "~0.6.0",
-    "http-server": "~0.6.1"
+    "http-server": "~0.6.1",
+    "gulp-rename": "~1.1.0",
+    "gulp-clean": "~0.2.4",
+    "gulp-zip": "~0.1.2"
   },
   "dependencies": {
-    "gulp-rename": "~1.1.0"
+    "gulp-zip": "~0.1.2"
   }
 }
