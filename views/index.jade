@@ -14,10 +14,25 @@ html(lang='en', ng-app='sd-checker-app')
 
     body
         header.reduced: .inner
-            .logo
+            a.logo(href='#', onclick='openLink("http://www.kano.me")')
 
         div(ng-view)
 
         script(src='js/vendor/angular.min.js', type='text/javascript')
         script(src='js/vendor/angular-route.min.js', type='text/javascript')
         script(src='js/index.js', type='text/javascript')
+
+        script.
+            var gui = null;
+
+            if (require) {
+                gui = require('nw.gui');
+            }
+
+            function openLink (url) {
+                if (gui) {
+                    gui.Shell.openExternal(url);
+                } else {
+                    location.href = url;
+                }
+            }

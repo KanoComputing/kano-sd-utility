@@ -5,6 +5,10 @@
         "toolbar": false,
         "width": 1000,
         "height": 600,
+        "min_width": 600,
+        "min_height": 1000,
+        "max_width": 1000,
+        "max_height": 600,
         "icon": "icon.png",
         "title": "Kano SD card utility"
     }

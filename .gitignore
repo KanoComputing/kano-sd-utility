@@ -6,3 +6,4 @@ app/js/app.js
 **.sublime-workspace
 .tmp
 app.zip
+build

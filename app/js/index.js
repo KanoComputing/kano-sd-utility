@@ -142,6 +142,8 @@ controllers = {
 
 app.config(function($routeProvider, $httpProvider) {
   return $routeProvider.when('/', {
+    templateUrl: 'views/intro.html'
+  }).when('/selection', {
     controller: controllers.brandSelection,
     templateUrl: 'views/brand-selection.html'
   }).when('/selection/:brand', {
