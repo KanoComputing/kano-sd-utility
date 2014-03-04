@@ -91,7 +91,7 @@ ul.sizes-list li
     width 20%
 
 .results-heading
-    border-bottom 1px solid #eee
+    margin-bottom 0
 
 ul.results-list
     debullet()
@@ -99,11 +99,17 @@ ul.results-list
     li
         margin-bottom 20px
 
-    .type, .size, .info, .compatible
+    .class, .model, .info, .compatible
 
         .inner
             padding 10px
             border-radius 5px
+
+    .model .inner
+        font-size 13px
+        color #aaa
+        font-weight bold
+        margin-top 5px
 
     .info .inner
         background #eee
@@ -114,6 +120,7 @@ ul.results-list
         color #fff
         display block
         padding 10px
+        font-weight bold
 
         &.success
             background color-green
@@ -157,3 +164,7 @@ body.embedded
         height @width
         background url('../icon.png')
         background-size cover
+
+.credits
+    opacity .7
+    margin-top 20px

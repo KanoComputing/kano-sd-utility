@@ -8,12 +8,12 @@ section: .page-width
     div.row.results-heading
         .col-2: h4.center Class
         .col-2: h4.center Model
-        .col-5: h4.center Info
+        .col-6: h4.center Info
         .col-2: h4.center Compatible
 
     ul.results-list
         li.row(ng-repeat='card in results')
-            .col-2.type: .inner {{ card.class || '-' }}
-            .col-2.size: .inner {{ card.model || 'Unspecified' }}
-            .col-5.info: .inner {{ card.info || 'No information available' }}
-            .col-2.compatible: .inner(ng-class='{ success: card.compatible }') {{ card.compatible }}
+            .col-2.class: .inner {{ card.class || '-' }}
+            .col-2.model: .inner {{ card.model || '-' }}
+            .col-6.info: .inner {{ card.info || '' }}
+            .col-2.compatible: .inner(ng-class='{ success: card.compatible }') {{ card.compatible ? 'yes': 'no' }}
