@@ -1,0 +1,38 @@
+
+<section>
+  <div class="page-width"><a ng-href="#/selection/{{ brand }}/{{ type }}" class="button button-secondary button-back">&laquo; Sizes</a>
+    <h2 class="center">Compatibility Table</h2>
+    <div class="box center">Results for: {{ brand }} cards, {{ type }} - {{ size }} GB.</div>
+    <div class="row results-heading">
+      <div class="col-2">
+        <h4 class="center">Class</h4>
+      </div>
+      <div class="col-2">
+        <h4 class="center">Model</h4>
+      </div>
+      <div class="col-6">
+        <h4 class="center">Info</h4>
+      </div>
+      <div class="col-2">
+        <h4 class="center">Compatible</h4>
+      </div>
+    </div>
+    <ul class="results-list">
+      <li ng-repeat="card in results" class="row">
+        <div class="col-2 class">
+          <div class="inner">{{ card.class || '-' }}</div>
+        </div>
+        <div class="col-2 model">
+          <div class="inner">{{ card.model || '-' }}</div>
+        </div>
+        <div class="col-6 info">
+          <div class="inner">{{ card.info || '-' }}</div>
+        </div>
+        <div class="col-2 compatible">
+          <div ng-class="{ success: card.compatible }" class="inner">{{ card.compatible ? 'yes': 'no' }}</div>
+        </div>
+      </li>
+    </ul>
+    <p class="center credits authors">Reports by: <span ng-repeat="author in authors">{{author}}<span ng-if="!$last">, </span></span></p>
+  </div>
+</section>
