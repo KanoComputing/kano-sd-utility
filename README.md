@@ -1,6 +1,6 @@
 ## SD-Card Utility
 
-![Screenshot](http://oi58.tinypic.com/xdtpbc.jpg)
+![Screenshot](http://oi62.tinypic.com/auz4ax.jpg)
 
 > This web-app wraps in a guided wizard the contents taken from the Raspbian / SD Cards compatibility table found on [elinux.org](http://elinux.org/RPi_SD_cards)
 
