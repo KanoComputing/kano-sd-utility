@@ -1,5 +1,7 @@
 > This web-app wraps in a guided wizard the contents taken from the Raspbian / SD Cards compatibility table found on [elinux.org](http://elinux.org/RPi_SD_cards)
 
+![Screenshot](http://oi58.tinypic.com/xdtpbc.jpg)
+
 ## Setup
 
 	git clone git@github.com:KanoComputing/kano-sd-utility.git
