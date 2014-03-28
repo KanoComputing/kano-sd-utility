@@ -1,4 +1,4 @@
->This web-app wraps in a guided wizard the contents taken from the Raspbian / SD Cards compatibility table found on [elinux.org](http://elinux.org/RPi_SD_cards)
+> This web-app wraps in a guided wizard the contents taken from the Raspbian / SD Cards compatibility table found on [elinux.org](http://elinux.org/RPi_SD_cards)
 
 ## Setup
 
@@ -22,3 +22,8 @@ While developing you can run the watch tool to compile styles, html and javascri
 
 
 	npm run watch
+
+## Licence
+
+Copyright (C) 2014 Kano Computing Ltd.
+License: [http://www.gnu.org/licenses/gpl-2.0.txt](http://www.gnu.org/licenses/gpl-2.0.txt) GNU General Public License v2
